@@ -1,0 +1,11 @@
+{% extends "layouts/html.twig" %}
+
+{% block content %}
+<h3>{{ pageTitle }}</h3>
+
+<ul>
+    {% for value in pageList %}
+        <li><a href="{{ value }}">{{ value }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

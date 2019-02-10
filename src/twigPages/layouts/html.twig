@@ -1,0 +1,12 @@
+{% set title = "Twig.js templating test" %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% include '../includes/header.twig' %}
+        {% block content %}{% endblock %}
+    {% include '../includes/footer.twig' %}
+</body>
+</html>

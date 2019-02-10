@@ -1,0 +1,12 @@
+{% extends "layouts/html.twig" %}
+
+{% block content %}
+<h3>{{ pageTitle }}</h3>
+
+<ul>
+    {% for value in benefits %}
+        <li>{{ value }}</li>
+    {% endfor %}
+</ul>
+{{html}}
+{% endblock %}
